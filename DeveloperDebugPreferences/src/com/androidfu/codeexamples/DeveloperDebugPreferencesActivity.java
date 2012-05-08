@@ -26,7 +26,7 @@ public class DeveloperDebugPreferencesActivity extends MainActivity {
 		listener = new SharedPreferences.OnSharedPreferenceChangeListener() {
 			public void onSharedPreferenceChanged(SharedPreferences prefs, String key) {
 				developer_debug_override = AppConstants.getDebug(DeveloperDebugPreferencesActivity.this);
-                Toast.makeText(DeveloperDebugPreferencesActivity.this, key, Toast.LENGTH_LONG).show();
+				Toast.makeText(DeveloperDebugPreferencesActivity.this, key, Toast.LENGTH_LONG).show();
 			}
 		};
 		sp.registerOnSharedPreferenceChangeListener(listener);
@@ -63,6 +63,6 @@ public class DeveloperDebugPreferencesActivity extends MainActivity {
 	@Override
 	protected void onDestroy() {
 		super.onDestroy();
-        sp.unregisterOnSharedPreferenceChangeListener(listener);
+		sp.unregisterOnSharedPreferenceChangeListener(listener);
 	}
 }

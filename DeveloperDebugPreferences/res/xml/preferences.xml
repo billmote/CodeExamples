@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
 
-    <PreferenceCategory android:title="Functionality Preferences" >
-        <ListPreference
-            android:defaultValue="#FFFF0000"
-            android:entries="@array/my_listpreference_options"
-            android:entryValues="@array/my_listpreference_values"
-            android:key="my_listpreference"
-            android:summary="You can select an item from the list"
-            android:title="Choose One" />
-    </PreferenceCategory>
+	<PreferenceCategory android:title="Functionality Preferences" >
+		<ListPreference
+			android:defaultValue="#FFFF0000"
+			android:entries="@array/my_listpreference_options"
+			android:entryValues="@array/my_listpreference_values"
+			android:key="my_listpreference"
+			android:summary="You can select an item from the list"
+			android:title="Choose One" />
+	</PreferenceCategory>
 
 </PreferenceScreen>
