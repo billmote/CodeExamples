@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
 
-	<PreferenceCategory android:title="Display Preferences" >
-		<CheckBoxPreference
-			android:defaultValue="true"
-			android:key="my_boolean"
-			android:summary="Some arbitrary true/false option"
-			android:title="True or False?" />
-	</PreferenceCategory>
+    <PreferenceCategory android:title="Display Preferences" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="my_boolean"
+            android:summary="Some arbitrary true/false option"
+            android:title="True or False?" />
+    </PreferenceCategory>
 
 </PreferenceScreen>
