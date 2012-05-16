@@ -21,7 +21,6 @@ public class DeveloperDebugPreferencesActivity extends MainActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         developer_debug_override = AppConstants.getDebug(this);
-
         sp = PreferenceManager.getDefaultSharedPreferences(this);
         listener = new SharedPreferences.OnSharedPreferenceChangeListener() {
             public void onSharedPreferenceChanged(SharedPreferences prefs, String key) {
