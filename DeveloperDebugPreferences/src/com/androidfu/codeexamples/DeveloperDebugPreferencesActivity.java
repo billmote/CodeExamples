@@ -29,7 +29,6 @@ public class DeveloperDebugPreferencesActivity extends MainActivity {
             }
         };
         sp.registerOnSharedPreferenceChangeListener(listener);
-
         if (developer_debug_override) {
             /*
              * This will show only when pushed from the PC to your phone and if
