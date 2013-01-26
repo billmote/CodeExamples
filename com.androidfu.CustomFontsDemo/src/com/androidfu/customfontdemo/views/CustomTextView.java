@@ -1,12 +1,12 @@
 package com.androidfu.customfontdemo.views;
 
-import com.androidfu.customfontdemo.R;
-
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Typeface;
 import android.util.AttributeSet;
 import android.widget.TextView;
+
+import com.androidfu.customfontdemo.R;
 
 /**
  * StyledTextView

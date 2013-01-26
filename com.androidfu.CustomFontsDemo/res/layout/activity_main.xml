@@ -4,12 +4,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/kung_fu_droid" >
+    android:background="@drawable/kung_fu_droid"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp" >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        android:paddingTop="5dp" >
+
+        <!-- Regular font, nothing special -->
+        <com.androidfu.customfontdemo.views.CustomTextView
+            android:id="@+id/first_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_world"
+            android:textSize="36sp"
+            android:layout_gravity="center" />
 
         <!-- Regular font, nothing special -->
         <com.androidfu.customfontdemo.views.CustomTextView
