@@ -23,6 +23,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        // The way that makes us repeat a lot of code and the reason for this demo
         CustomTextView textView = (CustomTextView) findViewById(R.id.first_text_view);
         textView.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/FFF_Tusj.ttf"), Typeface.NORMAL);
         textView.setText(getString(R.string.app_name));
