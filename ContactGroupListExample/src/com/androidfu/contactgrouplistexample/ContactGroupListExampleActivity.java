@@ -90,6 +90,7 @@ public class ContactGroupListExampleActivity extends ListActivity {
             ViewHolder holder;
 
             if (convertView == null) {
+                holder.name = (TextView) convertView.findViewById(R.id.lv_topText);
                 LayoutInflater vi = LayoutInflater.from(this.mContext);
                 convertView = vi.inflate(R.layout.listitem, null);
                 holder = new ViewHolder();
@@ -100,7 +101,6 @@ public class ContactGroupListExampleActivity extends ListActivity {
             }
             ContactGroup contactGroup = _groupList.get(position);
             if (contactGroup != null) {
-                holder.name = (TextView) convertView.findViewById(R.id.lv_topText);
                 holder.name.setText(contactGroup.name);
             }
             return convertView;
@@ -109,6 +109,7 @@ public class ContactGroupListExampleActivity extends ListActivity {
         private Context mContext;
     }
 
+    // Create a constructor and pass in a view then do the findViewById in here to avoid mishaps.
     public class ViewHolder {
         TextView name;
     }
