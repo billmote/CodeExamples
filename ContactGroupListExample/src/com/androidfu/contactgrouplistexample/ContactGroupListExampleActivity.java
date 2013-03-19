@@ -92,9 +92,7 @@ public class ContactGroupListExampleActivity extends ListActivity {
             if (convertView == null) {
                 LayoutInflater vi = LayoutInflater.from(this.mContext);
                 convertView = vi.inflate(R.layout.listitem, null);
-                holder = new ViewHolder();
-                holder.name = (TextView) convertView.findViewById(R.id.lv_topText);
-                convertView.setTag(holder);
+                convertView.setTag(new ViewHolder(convertView));
             } else {
                 // Get ViewHolder back
                 holder = (ViewHolder) convertView.getTag();
@@ -109,9 +107,12 @@ public class ContactGroupListExampleActivity extends ListActivity {
         private Context mContext;
     }
 
-    // Create a constructor and pass in a view then do the findViewById in here to avoid mishaps.
     public class ViewHolder {
         TextView name;
+        
+        ViewHolder(View v) {
+                holder.name = (TextView) v.findViewById(R.id.lv_topText);
+        }
     }
 
     public class ContactGroup {
