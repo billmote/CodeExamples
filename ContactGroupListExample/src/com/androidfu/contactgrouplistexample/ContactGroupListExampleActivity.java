@@ -90,10 +90,10 @@ public class ContactGroupListExampleActivity extends ListActivity {
             ViewHolder holder;
 
             if (convertView == null) {
-                holder.name = (TextView) convertView.findViewById(R.id.lv_topText);
                 LayoutInflater vi = LayoutInflater.from(this.mContext);
                 convertView = vi.inflate(R.layout.listitem, null);
                 holder = new ViewHolder();
+                holder.name = (TextView) convertView.findViewById(R.id.lv_topText);
                 convertView.setTag(holder);
             } else {
                 // Get ViewHolder back
